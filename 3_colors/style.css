@@ -1,0 +1,13 @@
+body{
+    font-size:24px;
+    background-color:lightblue;
+    text-align:center;
+   
+}
+article
+{
+    background-color: rgb(75, 128, 0);
+    padding: 40px;
+    margin: 30px;
+    border-radius: 50px;
+}

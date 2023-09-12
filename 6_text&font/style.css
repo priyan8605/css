@@ -1,0 +1,39 @@
+a
+{
+    text-transform:uppercase;
+    /*makes  letter of word capital or small
+    dependeing on capitalise or lowercase given  */
+
+    text-decoration:overline;
+    text-decoration-color: black;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 22px;
+   /* make text big or small depending on the pixel given */
+
+   font-weight:bold;
+   /* makes taxt look light or bold depending 
+   on what is given to font-weight */
+  font-style: normal;
+  /* can do italic,oblique and normal fonts*/
+}
+h1{
+    text-decoration: underline ;
+    color:green;
+    text-decoration-color:aqua ;
+    text-decoration-style:wavy ;
+    text-shadow: 2px 1px 5px green;/*3px is for down and 
+    2 px is for right side horizontally and 5px will blur the shadow */
+}
+p{
+    text-indent: 20px;
+    /* text-indent moves 1st line of paragraph towards 
+    slight right depending on the pixel given */
+    letter-spacing: 0.1rem;
+    /* letter-spacing will give space to the letters
+   present in paragraph tag depending on the rem given */
+   word-spacing: 1px;
+   /* word spacing used to give space between the word
+   present in given examplle--> ram    good   boy-->
+   here space between ram,good,boy is due to word-spacing */
+   font-family: cursive;
+}

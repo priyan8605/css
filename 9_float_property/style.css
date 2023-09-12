@@ -1,0 +1,69 @@
+.container
+{
+    height: 600px;
+   width: 600px;
+   border: 2px solid black;
+    overflow:auto;    
+   display: none;
+}
+.img1
+{
+    float: right;
+}
+.img2
+{
+    float:left;
+}
+.p1
+{
+    border:2px solid green;
+    clear: right;
+}
+/* .block1
+{
+   overflow: auto;
+} */
+.p2
+{
+    clear:both;
+}
+*
+{
+ box-sizing: border-box;
+}
+.bigbox
+{
+    height: 400px;
+    width: 400px;
+    background-color: gainsboro;
+  
+}
+.box
+{
+height: 100px;
+width: 100px;
+border: 2px solid black;
+overflow:auto;
+
+
+}
+.b1
+{
+    background-color: red;
+    float: right;
+}
+.b2
+{
+    background-color: blue;
+   float:left;
+}
+.b3
+{
+    background-color: green;
+    
+}
+.b4
+{
+    background-color: yellow;
+   
+}

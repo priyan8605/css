@@ -1,0 +1,27 @@
+*{
+    font-family: fantasy;
+}
+body{
+    font-size: 24px;
+}
+/* #name_of_id is used to do styling in css with the help of id */
+#title
+{
+    color:red;
+}
+#first,#second
+{
+    color:green;
+}
+/* .class_name can be used to style in css using class name */
+.purple
+{
+    color:yellowgreen;
+  
+}
+.highlight{
+    font-weight: bolder;
+}
+p:hover{
+    font-family: monospace;
+}

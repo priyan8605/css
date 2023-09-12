@@ -1,0 +1,13 @@
+.box
+{
+    border: 5px solid black;
+    padding:40px 40px 60px 20px;
+    margin:40px;
+  
+}
+.margin
+{
+    border: 5px solid green;
+    padding:40px 40px 60px 20px;
+    /* margin:40px; */
+}  

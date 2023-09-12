@@ -1,0 +1,46 @@
+/* below import is copied from fonts.google.com for roboto and poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&family=Roboto:ital,wght@0,700;1,400&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root
+ {
+  /*  making global variable by own that is user-defined global variable */
+    --primary-text-color:#2196F3 ; /* primary color of the website*/
+    --secondaryColor : #4CAF50;   /* secondary color of the website*/
+    --textColor :#ffffff;    /* text color of the website*/
+    --bgColor : #f8f9fa;     /* background color of the website*/
+    --accent-color-text:#577592;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69a3;
+    --padding-inline-section:20px;
+}
+body
+{
+    font-family: 'Poppins',sans-serif;
+    color:var(--primary-text-color);
+    background-color: var(--accent-color);
+
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3
+{
+    font-size: 1.5rem;
+}
+p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.25rem;
+    color:var(--secondaryColor);
+    line-height: 1.25rem;/* used to give space between the lines*/
+}
+a{
+    display:inline-block;
+}

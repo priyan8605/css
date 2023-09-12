@@ -1,0 +1,110 @@
+*
+
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.outer-box
+{
+    /* our full screen is an outer box; */
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to top left,rgb(128, 255, 0),rgb(0, 153, 255));
+    /* linear-gradient is a function in which we can pass thing
+    to top left coz of this from bottom right to top left gradient is formed
+    at bottom right it's parrot green which becomes blue on top left */
+}
+.inner-box
+{
+    border: 2px solid rebeccapurple;
+    width: 400px;
+    /* inside inner-box all content is written to keep content in centere we will define margin */
+    margin:0 auto;
+    /* from top and bottom margin is zero but from left and right 
+   left-right auto margin will bring inner-box to the centre*/
+    position: relative;
+    top:50%;
+    /* due to position relative and top 50% inner box will come 50% down inside outer  box */
+    transform: translateY(-50%); 
+     /* after using position and top  transform: translateY(-50%); will bring inner box completely at centre */
+     padding:20px 40px 60px 80px ;
+     /* padding will keep distance between border and content of the inner box */
+     border-radius: 20px;
+     box-shadow: 2px 2px 5px;
+     /* 2px shadow in right and bottom and 5px blur; */
+     z-index:4 ;
+     background-color:#ffffff09;
+     backdrop-filter: blur(1px);
+     /* background: linear-gradient(to top left,#ffffff,#ffffff20); */
+}
+.signup-header h1/*h1 is inside sign-up  header class  */
+{
+    font-size: 3rem; /*its size of signup*/
+     color:blueviolet;/* it is color of signup */
+
+}
+.signup-header p/*p is inside signup-header class*/
+{
+font-size: 0.8rem;
+color: bisque;/*it's color of it just take 30 seconds*/
+}
+.signup_body p
+{
+    margin: 10px 0px;/*10px margin given from top and bottom to<p> of signup-body class*/
+}
+.signup_body p label{
+    display: block;
+ 
+}
+.signup_body p input
+{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+.signup_body p input[type="submit"]/*[type="submit"] because of this styling only occurs to submit button */
+{
+background-color: rgb(0, 191, 255);/*this color goes to create account "submit" button*/
+border: none;/*border will not be seen in submit button*/
+color: white;
+cursor: pointer;/*when we hover cursor on submit button cusor changes from arrow to fingers*/
+}
+.signup_body p input[type="submit"]:hover/*its for hover property*/
+{
+background-color: aqua;
+/* when we hover cursor on submit button it's color chanes to aqua*/
+}
+.signup-footer p{
+    color: black;
+    text-align: center;
+}
+.signup-footer p a{
+    color: rgb(0, 115, 255);/* this is the color of login*/
+
+}
+.circle
+{
+    height: 100px;
+    width:100px;
+    border-radius:50px;
+    /* height width and half border-radius will make circle; */
+    background:linear-gradient(to top right,white,yellow);
+    position: absolute;
+}
+.c1
+{
+    top: 75px;
+    left: 40px;
+}
+.c2
+{
+    bottom: 80px;
+    right: 40px;
+}

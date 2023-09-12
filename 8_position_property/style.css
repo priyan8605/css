@@ -1,0 +1,53 @@
+.container
+{
+    height:300px ;
+    width:300px ;
+    background-color: gainsboro;
+    margin:100px;
+
+}
+.box
+{
+    height:100px ;
+    width:100px ;
+}
+.red
+{  
+    position: relative;
+    /* relative means relative to parent container w.r.t container where we can go 
+    left ,right,top,bottom */
+    top:50px;/* once we defined top now we can't define bottom*/
+    /* from top we will go 50px down w.r.t container (parent) */
+    left:50px; /* once we defined left now we can't define right*/
+     /* from left we will go 50px right w.r.t container (parent) */
+     z-index:10 ;
+    background-color: red;
+}
+.green
+{
+    background-color: green;
+     position: absolute;
+    /* absolute is relative to parent(screen) */
+    top:10px;
+   /* with respect to parent screen */
+    left: 10px;
+    
+}
+.blue
+{
+    background-color: blue;
+    position: fixed;
+    top: 100px;
+    left:10px ;
+} 
+.purple
+{
+    background-color: purple;
+    position: sticky;
+    top:50px;
+  z-index: 20;
+}
+.spacer
+{
+    height: 900vh;
+}
