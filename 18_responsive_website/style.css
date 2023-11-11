@@ -61,6 +61,7 @@ ul
 max-width: 1180px;
 margin-inline: auto;/* to give margin in left and right and due to auto container will come at the center*/
 padding-inline: var(--padding-inline-section);/*used to give padding in left and right */
+overflow: hidden;/*the things which were overflowing that will not overflow because they will not been seen */
 
 }
 .flex
@@ -85,6 +86,7 @@ padding-inline: var(--padding-inline-section);/*used to give padding in left and
     font-weight: 800;
     padding: 8px 18px;
     box-shadow: 0 0 2px var(--primary-text-color);/* x(0) y(0)  shadow(2px) shadow_color(var())*/
+    text-align: center;
 }
 .primary-button:hover{
     background-color: var(--accent-color-dark);/* change in color while hovering*/
@@ -129,9 +131,10 @@ padding-inline: var(--padding-inline-section);/*used to give padding in left and
 /* nav- bar */
 .main-nav
 {
+    position: relative;
     margin-top: 20px;
     display: flex;
-    justify-content: space-between ;/* bcoz of this there will be space between image and ul and list will go the rightmost side*/
+    justify-content: space-between;/* bcoz of this there will be space between image and ul and list will go the rightmost side*/
 }
 .company-logo img
 {
@@ -144,6 +147,10 @@ padding-inline: var(--padding-inline-section);/*used to give padding in left and
 .nav-links ul{
    gap:40px;/* brings gap between the list product sign-in etc  */
   justify-content:end;/*because of this children of <ul> which is <li> will always be at right side*/
+}
+.nav-toggle
+{
+    display: none;
 }
 /* header */
 
@@ -159,17 +166,23 @@ header {
 }
 .header-right img
 {
-    width: 500px;
+    width:100%;/* header-right img will take 100% width w.r.t 40vw of header-left*/
 }
 .header-left
 {
-    max-width: 40vw;
+    width: 40vw;
     /* the max-width of paragraph in header-left cant be more than 40px */
 }
 h1 ,.get-started-btn{
     margin: 20px;
 }
 /* Companies-Section */
+.logos
+{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 .logos img
 {
    
@@ -190,6 +203,7 @@ h1 ,.get-started-btn{
 }
 .features-header
 {
+   margin-bottom: 40px;
     text-align: center;/* <h2> and secondary-button will come to the center*/
 }
 .features-area
@@ -219,15 +233,27 @@ h1 ,.get-started-btn{
 .big-feature-container
 {
     gap: 30px;
+    
+}
+#second-big-feature
+{
+    flex-direction: row-reverse;
 }
 .feature-disc
 {
     flex-direction: column;/* h3,h4 and p will lie one below other due to this column*/
     align-items: flex-start;
 }
+/* example-section */
+.examples-section
+{
+padding: 80px var(--padding-inline-section);
+}
 .examples-header
 {
-    text-align: center;/*h,secondary-button will come to the center due to  this */
+    text-align: center;/*here secondary-button will come to the center due to  this */
+    flex-direction: column;
+    text-align: center;
 }
 .examples-heading-text
 {
@@ -237,6 +263,7 @@ h1 ,.get-started-btn{
 {
    gap: 10px;
     margin: 30px 0 30px 0;
+    flex-wrap: wrap;
 }
 .examples-card:hover
 {
@@ -246,7 +273,7 @@ h1 ,.get-started-btn{
 {
     width:23%;
     position: relative;
-    min-height: 300px;/*minimum height will always be of 300px less than 300px will not happpen */
+    height: 300px;/* height will always be of 300px less than 300px will not happpen */
     background: black;
   background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.9)),url(image7.jpg);/* gives background-image as well as opacity due to linar gradient()*/
   background-size: cover;/*this adjust the sixe of image if it's to big */
@@ -288,6 +315,7 @@ h1 ,.get-started-btn{
     gap: 50px;
     color: white;
      margin-bottom: 20px;
+     text-align: center;
 }
 .cta-section-container
 {
@@ -324,4 +352,7 @@ h1 ,.get-started-btn{
 {
     justify-content: center;
     gap: 50px;
+    flex-wrap: wrap;
 }
+
+

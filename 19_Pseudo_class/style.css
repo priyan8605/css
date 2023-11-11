@@ -1,0 +1,78 @@
+.body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 40px;
+}
+/* pseudo_class */
+.primary-btn:link /*because of this we will only give style to the link state of the primary-btn*/
+{
+/* the colour of unvisited link */
+color: brown;
+padding: 10px;
+}
+.primary-btn:visited/*if atleast once also we click on primary-btn then we will go in visited state and Learn more color after visiting even once will chabge to green  */
+{
+    color:orange;
+}
+.primary-btn:hover/*the style will only be given to hover state of primary-btn*/
+{
+color:red;
+background-color: antiquewhite;
+}
+.primary-btn:active
+{
+    /*jbb hum button pr click krenge tbb vo kis tarh se dikhega */
+color: black;
+background-color: gray;
+}
+
+ul li:first-child/*ul ke andr jo li hai ooska 1st child i.e "item-1" and "item type 2 -1" laa krr dega */
+{ 
+    /* style */
+background-color: blueviolet;
+}
+ul li:last-child/*ul ke andr jo li hai ooska last child i.e "item-10" and "item type 2 -5" laa krr dega */
+{
+    background-color: red;
+}
+ul li:nth-child(2n+1)/*ul ke andr jo li hai ooska last child i.e "item-4" and "item type 2 -4" laa krr dega */
+{
+    background-color: green;
+}
+
+/* psudo_element */
+h2::first-letter
+{
+    /* style only given to first letter(i.e.T) of h2 */
+  font-size: 3rem;
+}
+p::first-line
+{
+    /* style only given to first line of paragraph */
+    background-color:burlywood;
+}
+::selection
+{
+    /* while selecting this style will be seen */
+    background-color: black;
+    color: white;
+}
+
+/* before and after psudo element */
+h3::before
+{
+    /* here we can define the thingsthat will come just before h3 */
+    content: 'any ';
+    /* note we cannot select the element of ::before (i.e.any)  */
+}
+h3::after
+{
+    /* here we can define thingsthat will come after h3 */
+    /* the things defined inside ::after can not be selected */
+    content: '***';
+}
+.required::after
+{
+    content: '*';
+    color: red;
+}

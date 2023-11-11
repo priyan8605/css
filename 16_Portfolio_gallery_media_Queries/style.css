@@ -1,0 +1,68 @@
+*
+{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-size: 1.2rem;
+}
+.container
+{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(to right,rgba(0, 9, 3, 0.931),rgb(12, 81, 12));
+}
+.left-text
+{
+    flex-basis: 30%;/*30% width of container is taken along main axis with help of flex-basis */
+}
+.gallery
+{
+    flex-basis: 50%;/*takes 50% width of container along main axis */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 120px;/*all the rows wil automatically get a height of 120 px */
+}
+.box
+{
+    background-size:cover;/* makes the complete image visible*/
+    background-position:top;/*show the top part of image*/
+    color:white;/* makes color of text white*/
+    display: flex;/*making it flex show that we can bring text to the center*/
+    justify-content: center;/*bring text at the center of main axis*/
+    align-items: center;/*bring text to the center of y axis*/
+    background-color:#222;
+    background-blend-mode: hard-light;/*blends the background color and image into darker */
+    cursor:pointer;/*cursor changes to finger linke pointer as we go on box image*/
+}
+#box-1
+{
+    grid-column: 1/2;
+}
+.box:hover
+{
+    background-color: #999;/*whenever we hover over the box the background image will change */
+    background-position: bottom;/*when we hover over box the image bottom part will be shown*/
+    box-shadow: 0 0 4px white;
+}
+/* mediaquery for width <=1024px */
+@media screen and (max-width:1024px)/*when media is beein shown in screen and maximum width is of 1024px of media*/
+{
+    .container{
+        flex-direction:column;/*when width is between 0 to 1024px screen container flex-direction is column i.e arrangement is vertical*/
+        padding-block:20px ;/*gives padding from top as well as bottom */
+    }
+    .gallery
+    {
+        width: 100%;/*when flex direction becomes column then gallery will take 100% screen*/
+       grid-auto-rows: 220px;
+    }
+    .box{
+        grid-row:span 2;/*all box will take 1 row only */
+        grid-column: span 3;
+    }
+}

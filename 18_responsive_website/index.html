@@ -6,16 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
 </head>
 <!-- we can use <section> also in place of <p> -->
 <body>
     <!-- top-banner -->
     
-    <div class="top-banner">
-         <div class="container">
-            <div class="small-bold-text banner-text">
-                🥳 New to use hub:open and close card sorting
-            </div>
+        <div class="top-banner">
+            <div class="container">
+            <div class="small-bold-text banner-text">🥳 New to use hub:open and close card sorting</div>
         </div>
     </div>
     <!-- nav-bar -->
@@ -24,17 +23,19 @@
         <a href="#" class="company-logo">
          <img src="assets/asset 15.svg" alt="company-logo">
         </a>
-        <div class="nav-links">
-        <ul class="flex">
-           <li><a href="#" class="hover-link">Products</a></li>
-           <li><a href="#" class="hover-link">Customers</a></li>
-           <li><a href="#" class="hover-link">Pricing</a></li>
-           <li><a href="#" class="hover-link">Resources</a></li>
-           <li><a href="#" class="hover-link secondary-button">Sign-in</a></li>
-           <li><a href="#" class="hover-link primary-button">Sign-up</a></li>
-        </ul>
+        <div class="nav-links" id="nav-links">
+         <ul class="flex">
+            <li><a href="#" class="hover-link">Products</a></li>
+            <li><a href="#" class="hover-link">Customers</a></li>
+            <li><a href="#" class="hover-link">Pricing</a></li>
+            <li><a href="#" class="hover-link">Resources</a></li>
+            <li><a href="#" class="hover-link secondary-button">Sign-in</a></li>
+            <li><a href="#" class="hover-link primary-button">Sign-up</a></li>
+         </ul>
         </div>
-
+<a href="#" class="nav-toggle hover-links" id="nav-toggle">
+    <i class="fa-sharp fa-regular fa-bars"></i>
+</a>
     </div>
     </nav>
     <header>
@@ -42,7 +43,7 @@
         <div class="header-left">
          <h1>🎨Design Confidently !</h1>
          <p>
-            We help you design better products faster with our intuitive drag & drop interface.
+            We help you design better products faster with our intuitive drag and drop interface.
             We’ve got a lot more than just the basics for your next project — check out some of these other features below!
             We’re here for your every step of the way so that you don't have to worry about anything else!
          </p>
@@ -125,7 +126,7 @@
     </section>
     <!-- big-feature-section -->
     <section class=" big-features-section">
-        <div class="container flex big-feature-container">
+        <div class="container flex big-feature-container" id="second-big-feature">
           <div class="feature-image">
             <img src="image3.jpg" alt="">
           </div>
@@ -250,7 +251,7 @@
     <section class="subfooter">
         <div class="container flex subfooter-container">
     <a href="#" class="hover-links">Privacy</a>
-    <a href="#" class="hoverlinks">Terms & Conditions</a>
+    <a href="#" class="hoverlinks">Terms and Conditions</a>
     <a href="#" class="hover-links">Security information</a>
     <a href="#" class="hover-links"><i class="fa-brands fa-facebook"></i></a>
     <a href="#" class="hover-links"><i class="fa-brands fa-twitter"></i></a>
@@ -260,6 +261,15 @@
 
     <script src="https://kit.fontawesome.com/14cb0abfd9.js" crossorigin="anonymous"></script>
     <!-- //with this we can use icons of fontawesome website -->
+    <script>
+        // writing javascript code
+        const toggleButton=document.getElementById("nav-toggle");//will acces nav-toggle id
+        const navLinks=document.getElementById('nav-links');
+        toggleButton.addEventListener('click',() =>
+        {
+            navLinks.classList.toggle('active');
+        })
+    </script>
 </body>
 
 </html>

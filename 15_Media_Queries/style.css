@@ -1,0 +1,26 @@
+
+body
+{
+    background-color: red;   
+}
+@media(width<=900px)/*when width is less than equal to 400px then following css should occur */
+{
+    body {
+        background-color: green;/*when width of body is less than or equal to 400px then body
+        background color changes from red to green */
+    }
+}
+@media(Orientation:portrait)
+{
+    body 
+    {
+        background-color: yellow;
+    }
+}
+@media(min-width:200px)/*width>=200px*/
+{
+    body 
+    {
+        background-color: orange;
+    }
+}

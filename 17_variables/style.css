@@ -1,0 +1,38 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root
+{
+--primary-color:blue;
+--default-margin:20px;
+}
+.container
+{
+    padding: 40px;
+   color:var(--primary-color);
+}
+h1
+{
+    text-align: center;
+    margin: var(--default-margin);
+}
+.box
+{
+    --my-var:yellow;/* user defined variable*/
+    padding: 20px;
+
+}
+.box h2 /*style will only be given to h2 of box */
+{
+margin-bottom:20px ;
+background-color: var(--my-var);
+}
+@media screen and (min-width:800px) {
+    .box
+    {
+        --my-var:pink;
+    }
+}

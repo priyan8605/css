@@ -1,0 +1,70 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0px;
+    background-color: teal;
+    height: 100vh;
+    display: flex;
+    align-items: center;/*brings in center of y axis*/
+    justify-content: center;/* brings in center of x axis*/
+    flex-direction: column;
+    gap: 200px;
+}
+.container
+{
+    width: 300px;
+    height: 300px;
+    border: 2px solid white;
+    animation: orbit 4s linear infinite ;
+    border-radius: 50%;
+}
+.box
+{
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.loader
+{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+.dot
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+   animation: up-down 0.5s ease infinite alternate;
+}
+.dot:nth-child(2)
+{
+    animation-delay:0.1s ;
+}
+.dot:nth-child(3)
+{
+    animation-delay:0.2s ;
+}
+.dot:nth-child(4)
+{
+    animation-delay:0.3s ;
+}
+@keyframes up-down {
+ from 
+ {
+    transform: translateY(-10px);
+ }
+ to{
+   transform: translateY(10px);
+ }
+    
+}
